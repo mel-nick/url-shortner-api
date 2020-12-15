@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-fs = require('fs');
+const fs = require('fs');
 const PORT = process.env.PORT || 5000;
 
 //rawURL
