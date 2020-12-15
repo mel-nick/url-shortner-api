@@ -33,7 +33,7 @@ router.get('/:shortcode', async (req, res) => {
     fs.readFile('db.json', (err, data) => {
       if (err) throw err;
       let urls = JSON.parse(data);
-      res.writeHead(302, {
+      res.writeHead(301, {
         Location: urls.rawUrl,
       });
       res.end();
